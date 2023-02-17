@@ -1,0 +1,393 @@
+Name: Variables
+Type: FolderType
+Children:
+- Name: Calendar_Rollers_Left
+  Id: g=a3e3ea9ab8ffc70db8bd521270af0e4c
+  Type: BaseObjectType
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Alias1
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"ece6a8a8b8a0081a1315d54c9e05d1a5","Namespace":44}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"70bd9424fca5bbb042604d472d771963","Namespace":44}
+  - Name: CrownCylinderForce
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 4.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 450.0
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 4404534
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Alias1/CrownCylinderForce"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: GapDistance
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 5.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: false
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Alias1/GapDistance"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CrownDisplacement
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 5.0
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Alias1/CrownDisplacement"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+- Name: Calendar_Rollers
+  Id: g=70bd9424fca5bbb042604d472d771963
+  Supertype: TagStructure
+  Children:
+  - Name: CrownCylinderForce
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CrownCylinderForce"
+  - Name: CrownDisplacement
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CrownDisplacement"
+  - Name: GapDistance
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "GapDistance"
+  - Name: CrownCylinderForce
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CrownCylinderForce"
+  - Name: CrownDisplacement
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CrownDisplacement"
+  - Name: GapDistance
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "GapDistance"
+- Name: Calendar_Rollers_Right
+  Id: g=808da0234f9716559aa73515b43295ee
+  Type: BaseObjectType
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Alias1
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"0a017069d1fc8d2eab6d6fcdaefb9b66","Namespace":44}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"70bd9424fca5bbb042604d472d771963","Namespace":44}
+  - Name: CrownCylinderForce
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 4.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 450.0
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 4404534
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Alias1/CrownCylinderForce"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: GapDistance
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 5.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: false
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Alias1/GapDistance"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CrownDisplacement
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 5.0
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Alias1/CrownDisplacement"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

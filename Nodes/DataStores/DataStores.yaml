@@ -1,0 +1,269 @@
+Name: DataStores
+Type: FolderType
+Children:
+- Name: EmbeddedDatabase
+  Id: g=4ae6fa018b5928daf71aa0c41b6bf5d7
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: CylinderPressures
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=33;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Out_CrownCylinderPressureLeft
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Out_CrownCylinderPressureRight
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Out_GapCylinderPressureLeft
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Out_GapCylinderPressureRight
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+    - Name: AlarmsEventLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=33;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_it-IT'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_de-AT'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_zh-CN'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+    - Name: DrillingRecipe
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=33;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Val_Bit01ArmPosition
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Val_Bit01Pressure
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit01RotationSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit01Wear
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit02ArmPosition
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Val_Bit02Pressure
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit02RotationSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit02Wear
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit03ArmPosition
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Val_Bit03Pressure
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit03RotationSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_Bit03Wear
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_ForwardSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_GuidanceDistance
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_HeadRotationSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /Val_LubeHeatersTemperature
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+  - Class: Reference
+    Target: ns=35;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=33;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=59
+    Direction: Forward

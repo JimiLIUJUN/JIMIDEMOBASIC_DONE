@@ -1,0 +1,244 @@
+Name: Recipe
+Id: g=58edcee01a14a75e0ff3f1d4f4a0369a
+Type: FolderType
+Children:
+- Name: Val_Bit01ArmPosition
+  Id: g=39b0b858125d864a9ed808cea3f61363
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit01ArmPosition"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit01Pressure
+  Id: g=a712b4370a208b3eb066858e1562a826
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit01Pressure"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit01RotationSpeed
+  Id: g=507872121901fc0e1abf17dbd279c927
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit01RotationSpeed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit01Wear
+  Id: g=1f7ec7a9188ac4f551fb82c8dccc2aab
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit01Wear"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit02ArmPosition
+  Id: g=be1aee429c49addd80b9dec74f374072
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit02ArmPosition"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit02Pressure
+  Id: g=c1e349e6e2a037960c1f5e5245593791
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit02Pressure"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit02RotationSpeed
+  Id: g=124425b82f32d71d5f7bb038f67baa3a
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit02RotationSpeed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit02Wear
+  Id: g=fdb6b8332b5279506491400c61f7f5d2
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit02Wear"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit03ArmPosition
+  Id: g=aa7f4c7885584501eeefd483531d3240
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit03ArmPosition"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit03Pressure
+  Id: g=9805a2538205e16b0361a6840b8801a8
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit03Pressure"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit03RotationSpeed
+  Id: g=8f1a9cc6e7e730200bff2c6f62ed4f39
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit03RotationSpeed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_Bit03Wear
+  Id: g=68e8ce9d6d41293d63f753dbacff8f68
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_Bit03Wear"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_ForwardSpeed
+  Id: g=74940b77080bbfda70c67dfc01e98b4d
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_ForwardSpeed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_GuidanceDistance
+  Id: g=3023d8a2d80c996e8baa9940e78b8c48
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_GuidanceDistance"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_HeadRotationSpeed
+  Id: g=274edb90d195bff6ba979ac0c2a80492
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_HeadRotationSpeed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Val_LubeHeatersTemperature
+  Id: g=668a5a2421b6f0478b4a86df2ec42c4b
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/LogixDriver1/LogixStation1/Tags/Program&:Drill/Val_LubeHeatersTemperature"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
